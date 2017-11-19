@@ -286,7 +286,7 @@ Function Setup-Services
 # Run last
 Function Finalize-Install
 {
-    # Perform these steps only if the local server is a SharePoint farm server
+    # Perform these steps only if the local server is a SharePoint farm server for wes
     If (MatchComputerName $farmServers $env:COMPUTERNAME)
     {
         # Remove Farm Account from local Administrators group to avoid big scary warnings in Central Admin
